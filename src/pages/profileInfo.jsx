@@ -4,6 +4,7 @@ import { useLoaderData } from "react-router";
 
 const UserProfile = () => {
   const user = useLoaderData();
+  console.log("🚀 ~ UserProfile ~ user:", user)
   return (
     <div className="max-w-5xl mx-auto min-h-screen mt-10">
       <div className="px-3 py-2">

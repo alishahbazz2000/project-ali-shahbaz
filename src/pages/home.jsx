@@ -682,7 +682,7 @@ export async function action({ request }) {
   const data = Object.fromEntries(await request.formData());
   console.log("action");
   const authToken = localStorage.getItem("authToken");
-  await axios.put(
+  await axios.post(
     "http://localhost:5000/api/users/generate-verify-email-token",
     { token: authToken , id:data.id },
     {

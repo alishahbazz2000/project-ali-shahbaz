@@ -141,7 +141,7 @@ export const updateUserPasswordController = async (req, res) => {
 // ------------------------
 export const followingUserController = async (req, res) => {
   const { followId, loginUserId } = req.body;
-  console.log("🚀 ~ followingUserController ~ followId:", followId)
+  console.log("🚀 ~ followingUserController ~ followId:", followId);
   // const loginUserId = req?.user?.id;
 
   // find the toggle user check
@@ -252,8 +252,8 @@ export const generateVerificationToken = async (req, res) => {
     // generate token
     const verificationToken = await user.createAccountVerificationToken();
     await user.save();
-    const resetURL = `if you were requested to verify account , verify now within 10 minutes, otherwise ignore this message <a href="http://localhost:3000/verify-account/${verificationToken}">click here...</a>`;
-    const data = await resend.emails.send({
+    const resetURL = `if you were requested to verify account , verify now within 10 minutes, otherwise ignore this message <a href="http://localhost:5000/verify-account/${verificationToken}">click here...</a>`;
+    await resend.emails.send({
       from: "RedBlog <onboarding@resend.dev>",
       to: ["mr.redmasterr@gmail.com"],
       subject: "Hello from Bun + Resend + React Email 🫓💌",
@@ -268,7 +268,7 @@ export const generateVerificationToken = async (req, res) => {
 // ! verification account finally
 // ------------------------
 export const accountVerificationController = async (req, res) => {
-  const { id ,token } = req.body;
+  const { id, token } = req.body;
   const hashToken = crypto.createHash("sha256").update(token).digest("hex");
   console.log("🚀 ~ accountVerificationController ~ hashToken:", hashToken);
   // find this user by token

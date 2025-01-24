@@ -216,7 +216,7 @@ export async function action({ request, params }) {
   try {
     if (request.method === "POST") {
       const response = await axios.post(
-        "http://localhost:5000/api/events/update",
+        "http://localhost:5000/api/events",
         data,
         {
           headers: {
