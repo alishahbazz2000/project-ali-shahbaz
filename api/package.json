@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "module": "server.js",
+  "version": "1.0.0",
+  "author": "RedMaster",
+  "description": "Create Blog App With Bun React Remix Express Tailwind MagicUi",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "bun --watch server.js",
+    "dev": "bun --hot server.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "bad-words": "^4.0.0",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
+    "jose": "^5.9.6",
+    "mongoose": "^8.8.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "persian-swear-words": "^3.0.0",
+    "resend": "^4.0.1-alpha.0",
+    "sharp": "^0.33.5",
+    "slugify": "^1.6.6",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "vazir";
+    src: url("../assets/vazir/Vazir.ttf") format("truetype"),
+      url("../assets/vazir/Vazir.eot") format("opentype"),
+      url("../assets/vazir/Vazir.woff") format("woff"),
+      url("../assets/vazir/Vazir.woff2") format("woff2");
+  }
+
+  body {
+    @apply font-vazir;
+  }
+}
+
+@layer components {
+  .custom-navlink.pending {
+    @apply text-gray-500;
+  }
+  .custom-navlink.pending .loading-icon {
+    @apply !inline-block !relative;
+  }
+  .custom-navlink.active .loading-icon {
+    @apply hidden;
+  }
+  .custom-navlink {
+    @apply w-full h-full bg-red-500;
+  }
+  a.active {
+    @apply bg-gray-100 text-primary;
+  }
+  a.active svg {
+    @apply text-primary font-bold;
+  }
+}
