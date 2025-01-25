@@ -30,10 +30,10 @@ export default function LoginPage() {
     >
       <div className="w-full max-w-xl bg-white text-black rounded-lg shadow-2xl p-8">
         <h2 className="text-2xl font-semibold text-center mb-4">
-          Welcome Back!
+          خیلی خوش آمدید به پیکچین
         </h2>
         <p className="text-center mb-6">
-          Please login to your account to continue.
+          لطفا برای ادامه وارد حساب کاربری خود شوید.
         </p>
         <Form method="POST" className="space-y-6">
           <div>
@@ -67,25 +67,25 @@ export default function LoginPage() {
             size="lg"
             type="submit"
           >
-            {navigation.state !== "idle" ? "submitting..." : "Login"}
+            {navigation.state !== "idle" ? "در حال ارسال ..." : "ورود"}
           </Button>
         </Form>
 
         <p className="flex items-center justify-center gap-x-4 text-sm text-center text-black mt-6">
-          Don`t have an account?
           <Link
             to="/auth/signup"
             className="text-primary font-semibold hover:underline"
           >
-            Sign up
+            ثبت نام
           </Link>
+          حساب کاربری ندارید؟{" "}
         </p>
         <p className="flex items-center justify-center gap-x-4 text-sm text-center text-black mt-6">
           <Link
             to="/auth/forgetpassword"
             className="text-primary font-semibold hover:underline"
           >
-            ForgetPassword
+            فراموش کردن رمز عبور
           </Link>
         </p>
       </div>

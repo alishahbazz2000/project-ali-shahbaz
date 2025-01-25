@@ -136,7 +136,7 @@ export default function HomePage() {
             <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
               <div className="flex">
                 <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                  <span className="font-semibold text-indigo-600">وبلاگ</span>
+                  <span className="font-semibold text-indigo-600">پیکچین</span>
                   <span
                     className="h-4 w-px bg-gray-900/10"
                     aria-hidden="true"
@@ -155,7 +155,7 @@ export default function HomePage() {
                 بهترین ایده‌ها، بهترین نوشته‌ها
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                پلتفرمی برای کاوش، یادگیری و به اشتراک‌گذاری دانش. از تکنولوژی
+               پیکچین پلتفرمی برای کاوش، یادگیری و به اشتراک‌گذاری دانش. از تکنولوژی
                 تا هنر، از ایده‌های نوآورانه تا تجربه‌های عمیق، جایی که صداهای
                 متفاوت به گوش می‌رسند و کلمات تأثیرگذار باقی می‌مانند.
               </p>

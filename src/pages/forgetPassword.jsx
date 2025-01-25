@@ -30,10 +30,10 @@ export default function ForgetPassWord() {
     >
       <div className="w-full max-w-xl bg-white text-black rounded-lg shadow-2xl p-8">
         <h2 className="text-2xl font-semibold text-center mb-4">
-          Forget Passwrod
+          رمز عبور را فراموش کرده اید
         </h2>
         <p className="text-center mb-6">
-          Please Forget Passwrod to your account to continue.
+          لطفا برای ادامه رمز عبور حساب خود را فراموش کنید.{" "}
         </p>
         <Form method="POST" className="space-y-6">
           <div>
@@ -56,7 +56,7 @@ export default function ForgetPassWord() {
             size="lg"
             type="submit"
           >
-            {navigation.state !== "idle" ? "submitting..." : "Login"}
+            {navigation.state !== "idle" ? "در حال ارسال..." : "تایید ایمیل"}
           </Button>
         </Form>
       </div>
